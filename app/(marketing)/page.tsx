@@ -73,9 +73,9 @@ const Home: NextPage = () => {
 
       <FeaturesSection />
 
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
 
-      <PricingSection />
+      {/* <PricingSection /> */}
 
       <FaqSection />
     </Box>
@@ -94,30 +94,26 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                Build beautiful
-                <Br /> software faster
+                Elevate your business
+                <Br /> with our solutions
               </FallInPlace>
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Saas UI is a <Em>React component library</Em>
-                <Br /> that doesn&apos;t get in your way and helps you <Br />{' '}
-                build intuitive SaaS products with speed.
+                Innovative tech solutions React component library
+                <Br /> tailored to transform, streamline, and elevate your{' '}
+                <Br /> business to new <Em>heights</Em>.
               </FallInPlace>
             }
           >
             <FallInPlace delay={0.8}>
-              <HStack pt="4" pb="12" spacing="8">
-                <NextjsLogo height="28px" /> <ChakraLogo height="20px" />
-              </HStack>
-
-              <ButtonGroup spacing={4} alignItems="center">
+              <ButtonGroup spacing={4} alignItems="center" className="mt-8">
                 <ButtonLink colorScheme="primary" size="lg" href="/signup">
-                  Sign Up
+                  Get started
                 </ButtonLink>
                 <ButtonLink
                   size="lg"
-                  href="https://demo.saas-ui.dev"
+                  href="https://t.me/+251988745721"
                   variant="outline"
                   rightIcon={
                     <Icon
@@ -132,7 +128,7 @@ const HeroSection: React.FC = () => {
                     />
                   }
                 >
-                  View demo
+                  Schedule a demo
                 </ButtonLink>
               </ButtonGroup>
             </FallInPlace>
@@ -149,10 +145,10 @@ const HeroSection: React.FC = () => {
             <FallInPlace delay={1}>
               <Box overflow="hidden" height="100%">
                 <Image
-                  src="/static/screenshots/list.png"
+                  src="/static/screenshots/hero.png"
                   width={1200}
                   height={762}
-                  alt="Screenshot of a ListPage in Saas UI Pro"
+                  alt="Screenshot of a erp dashboard"
                   quality="75"
                   priority
                 />
@@ -170,33 +166,34 @@ const HeroSection: React.FC = () => {
         pt="20"
         features={[
           {
-            title: 'Accessible',
+            title: 'Expertise You Can Trust',
             icon: FiSmile,
-            description: 'All components strictly follow WAI-ARIA standards.',
+            description:
+              'Our team of seasoned professionals brings years of experience across industries.',
             iconPosition: 'left',
             delay: 0.6,
           },
           {
-            title: 'Themable',
+            title: 'Innovative Approach',
             icon: FiSliders,
             description:
-              'Fully customize all components to your brand with theme support and style props.',
+              'We stay ahead of the tech curve to bring you the latest innovations.',
             iconPosition: 'left',
             delay: 0.8,
           },
           {
-            title: 'Composable',
+            title: 'Customer-Centric',
             icon: FiGrid,
             description:
-              'Compose components to fit your needs and mix them together to create new ones.',
+              'Your success is our priority. We partner with you to achieve your goals.',
             iconPosition: 'left',
             delay: 1,
           },
           {
-            title: 'Productive',
+            title: 'End-to-End Solutions',
             icon: FiThumbsUp,
             description:
-              'Designed to reduce boilerplate and fully typed, build your product at speed.',
+              'From consultation to implementation and support, we’ve got you covered.',
             iconPosition: 'left',
             delay: 1.1,
           },
@@ -212,54 +209,29 @@ const HighlightsSection = () => {
 
   return (
     <Highlights>
-      <HighlightsItem colSpan={[1, null, 2]} title="Core components">
+      <HighlightsItem
+        colSpan={[1, null, 2]}
+        title="Empowering Your Business with Smarter Technology"
+      >
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-            Get started for free with <Em>30+ open source components</Em>.
-            Including authentication screens with Clerk, Supabase and Magic.
-            Fully functional forms with React Hook Form. Data tables with React
-            Table.
+            At Elevate Tech Solutions, we bridge the gap between your business
+            goals and cutting-edge technology. Our expert team delivers
+            customized solutions to modernize your operations, safeguard your
+            data, and unlock new growth opportunities. Whether you're a startup
+            or an established enterprise, we’re here to elevate your business
+            with solutions that are as dynamic as your ambitions.
           </Text>
-
-          <Flex
-            rounded="full"
-            borderWidth="1px"
-            flexDirection="row"
-            alignItems="center"
-            py="1"
-            ps="8"
-            pe="2"
-            bg="primary.900"
-            _dark={{ bg: 'gray.900' }}
-          >
-            <Box>
-              <Text color="yellow.400" display="inline">
-                yarn add
-              </Text>{' '}
-              <Text color="cyan.300" display="inline">
-                @saas-ui/react
-              </Text>
-            </Box>
-            <IconButton
-              icon={hasCopied ? <FiCheck /> : <FiCopy />}
-              aria-label="Copy install command"
-              onClick={onCopy}
-              variant="ghost"
-              ms="4"
-              isRound
-              color="white"
-            />
-          </Flex>
         </VStack>
       </HighlightsItem>
-      <HighlightsItem title="Solid foundations">
+      <HighlightsItem title="Our Mission">
         <Text color="muted" fontSize="lg">
-          We don&apos;t like to re-invent the wheel, neither should you. We
-          selected the most productive and established tools in the scene and
-          build Saas UI on top of it.
+          To elevate businesses by delivering robust, innovative, and customized
+          technology solutions that meet today’s challenges and prepare for
+          tomorrow’s opportunities.
         </Text>
       </HighlightsItem>
-      <HighlightsTestimonialItem
+      {/* <HighlightsTestimonialItem
         name="Renata Alink"
         description="Founder"
         avatar="/static/images/avatar.jpg"
@@ -268,26 +240,23 @@ const HighlightsSection = () => {
         “Saas UI helped us set up a beautiful modern UI in no time. It saved us
         hundreds of hours in development time and allowed us to focus on
         business logic for our specific use-case from the start.”
-      </HighlightsTestimonialItem>
+      </HighlightsTestimonialItem> */}
       <HighlightsItem
-        colSpan={[1, null, 2]}
+        colSpan={[1, null, 3]}
         title="Start your next idea two steps ahead"
       >
         <Text color="muted" fontSize="lg">
-          We took care of all your basic frontend needs, so you can start
-          building functionality that makes your product unique.
+          We took care of all your basic business needs, so you can have
+          functionality that makes your product unique.
         </Text>
         <Wrap mt="8">
           {[
-            'authentication',
-            'navigation',
-            'crud',
-            'settings',
-            'multi-tenancy',
-            'layouts',
-            'billing',
-            'a11y testing',
-            'server-side rendering',
+            'ERP',
+            'Landing Pages',
+            'Website Development',
+            'Mobile App Development',
+            'UI/UX Design',
+            'Graphics Design',
             'documentation',
             'onboarding',
             'storybooks',
@@ -324,16 +293,13 @@ const FeaturesSection = () => {
           textAlign="left"
           as="p"
         >
-          Not your standard
-          <Br /> dashboard template.
+          What We Offer
         </Heading>
       }
       description={
         <>
-          Saas UI Pro includes everything you need to build modern frontends.
-          <Br />
-          Use it as a template for your next product or foundation for your
-          design system.
+          Elevate Tech Solutions Provides Varied Services to Meet Your Business
+          Needs
         </>
       }
       align="left"
@@ -341,73 +307,73 @@ const FeaturesSection = () => {
       iconSize={4}
       features={[
         {
-          title: '#components.',
+          title: 'Custom Software Development',
           icon: FiBox,
           description:
-            'All premium components are available on a private NPM registery, no more copy pasting and always up-to-date.',
+            'Tailored software solutions designed to meet your unique business needs and give you a competitive edge.',
           variant: 'inline',
         },
         {
-          title: 'Starterkits.',
+          title: 'Cloud Services',
           icon: FiLock,
           description:
-            'Example apps in Next.JS, Electron. Including authentication, billing, example pages, everything you need to get started FAST.',
+            'Secure, scalable, and efficient cloud solutions to enhance your business agility.',
           variant: 'inline',
         },
         {
-          title: 'Documentation.',
+          title: 'IT Support & Consulting',
           icon: FiSearch,
           description:
-            'Extensively documented, including storybooks, best practices, use-cases and examples.',
+            'Round-the-clock support and expert consulting to keep your operations running smoothly..',
           variant: 'inline',
         },
         {
-          title: 'Onboarding.',
+          title: 'Data Analytics & Insights',
           icon: FiUserPlus,
           description:
-            'Add user onboarding flows, like tours, hints and inline documentation without breaking a sweat.',
+            'Transform your data into actionable insights that drive smarter decisions.',
           variant: 'inline',
         },
         {
-          title: 'Feature flags.',
+          title: 'Cybersecurity',
           icon: FiFlag,
           description:
-            "Implement feature toggles for your billing plans with easy to use hooks. Connect Flagsmith, or other remote config services once you're ready.",
+            'Protect your business from digital threats with robust and proactive cybersecurity measures.',
           variant: 'inline',
         },
         {
-          title: 'Upselling.',
+          title: 'Automation & Integration',
           icon: FiTrendingUp,
           description:
-            '#components and hooks for upgrade flows designed to make upgrading inside your app frictionless.',
+            'Streamline your processes and boost efficiency with seamless automation and system integration.',
           variant: 'inline',
         },
-        {
-          title: 'Themes.',
-          icon: FiToggleLeft,
-          description:
-            'Includes multiple themes with darkmode support, always have the perfect starting point for your next project.',
-          variant: 'inline',
-        },
-        {
-          title: 'Generators.',
-          icon: FiTerminal,
-          description:
-            'Extend your design system while maintaininig code quality and consistency with built-in generators.',
-          variant: 'inline',
-        },
-        {
-          title: 'Monorepo.',
-          icon: FiCode,
-          description: (
-            <>
-              All code is available as packages in a high-performance{' '}
-              <Link href="https://turborepo.com">Turborepo</Link>, you have full
-              control to modify and adjust it to your workflow.
-            </>
-          ),
-          variant: 'inline',
-        },
+        // {
+        //   title: 'Themes.',
+        //   icon: FiToggleLeft,
+        //   description:
+        //     'Includes multiple themes with darkmode support, always have the perfect starting point for your next project.',
+        //   variant: 'inline',
+        // },
+        // {
+        //   title: 'Generators.',
+        //   icon: FiTerminal,
+        //   description:
+        //     'Extend your design system while maintaininig code quality and consistency with built-in generators.',
+        //   variant: 'inline',
+        // },
+        // {
+        //   title: 'Monorepo.',
+        //   icon: FiCode,
+        //   description: (
+        //     <>
+        //       All code is available as packages in a high-performance{' '}
+        //       <Link href="https://turborepo.com">Turborepo</Link>, you have full
+        //       control to modify and adjust it to your workflow.
+        //     </>
+        //   ),
+        //   variant: 'inline',
+        // },
       ]}
     />
   )

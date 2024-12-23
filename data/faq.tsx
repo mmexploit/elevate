@@ -5,26 +5,27 @@ const faq = {
   // description: '',
   items: [
     {
-      q: 'How many products can I use Saas UI Pro for?',
+      q: 'What services does Elevate Tech Solutions offer?',
       a: (
         <>
-          The single license can be used for one commercial application or SaaS
-          product and unlimited internal tools. You can buy as many licenses as
-          you need. <br /> The unlimited license does not have any restrictions.
+          We provide a wide range of technology solutions, including custom
+          software development, IT consulting, cloud services, cybersecurity,
+          data analytics, and process automation. Our services are designed to
+          meet the unique needs of businesses across industries.
         </>
       ),
     },
     {
-      q: 'Can I use Saas UI Pro for client work?',
-      a: "Yes, that's totally up to you, as long as it fits the license you purchase.",
+      q: 'How can Elevate Tech Solutions help my business?',
+      a: 'We work closely with you to understand your goals and challenges, delivering innovative technology solutions that optimize operations, enhance security, and drive growth. Our goal is to empower your business with tools and strategies tailored to your success.',
     },
     {
-      q: 'Can I use Saas UI Pro for Open Source projects?',
-      a: 'No currently not. A large part of Saas UI is already released under MIT license. We try to give back to the community as much as possible.',
+      q: 'Do you work with businesses of all sizes?',
+      a: 'Yes, we partner with startups, small businesses, and large enterprises. No matter the size or scale of your operations, our team can provide customized solutions that align with your objectives and budget.',
     },
     {
-      q: 'Does Saas UI include Figma, Sketch or other design files?',
-      a: 'No, Saas UI does not include any design assets. Maintaining design resources costs a lot of extra effort. We believe small teams can move much faster by designing directly in code, with help of Storybooks.',
+      q: 'Are your solutions customizable?',
+      a: 'Absolutely! We pride ourselves on creating tailored solutions that address the specific needs and goals of each client. From software features to implementation strategies, we customize every aspect to ensure maximum value.',
     },
   ],
 }

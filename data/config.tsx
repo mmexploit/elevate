@@ -1,15 +1,15 @@
 import { Button } from '@chakra-ui/react'
 import { Link } from '@saas-ui/react'
 import { NextSeoProps } from 'next-seo'
-import { FaGithub, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaTelegram, FaTwitter } from 'react-icons/fa'
 import { FiCheck } from 'react-icons/fi'
 import { Logo } from './logo'
 
 const siteConfig = {
   logo: Logo,
   seo: {
-    title: 'Saas UI',
-    description: 'The React component library for startups',
+    title: 'Elevate Tech Solutions',
+    description: 'Elevate Tech Solutions | Elevate your business with our solutions',
   } as NextSeoProps,
   termsUrl: '#',
   privacyUrl: '#',
@@ -27,37 +27,28 @@ const siteConfig = {
         id: 'faq',
         label: 'FAQ',
       },
-      {
-        label: 'Login',
-        href: '/login',
-      },
-      {
-        label: 'Sign Up',
-        href: '/signup',
-        variant: 'primary',
-      },
+      
     ],
   },
   footer: {
     copyright: (
       <>
-        Built by{' '}
-        <Link href="https://twitter.com/Pagebakers">Eelco Wiersma</Link>
+        Copyright &copy; {new Date().getFullYear()}{' '}
       </>
     ),
     links: [
       {
-        href: 'mailto:hello@saas-ui.dev',
+        href: 'mailto:mubarekendrem@gmail.com',
         label: 'Contact',
       },
       {
-        href: 'https://twitter.com/saas_js',
-        label: <FaTwitter size="14" />,
+        href: 'https://t.me/+251988745721',
+        label: <FaTelegram size="14" />,
       },
-      {
-        href: 'https://github.com/saas-js/saas-ui',
-        label: <FaGithub size="14" />,
-      },
+      // {
+      //   href: 'https://github.com/saas-js/saas-ui',
+      //   label: <FaGithub size="14" />,
+      // },
     ],
   },
   signup: {
