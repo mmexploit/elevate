@@ -17,7 +17,8 @@ import {
   useClipboard,
 } from '@chakra-ui/react'
 import { Br, Link } from '@saas-ui/react'
-import type { Metadata, NextPage } from 'next'
+import type { NextPage } from 'next'
+import Head from 'next/head'
 import Image from 'next/image'
 import {
   FiArrowRight,
@@ -59,26 +60,22 @@ import faq from '#data/faq'
 import pricing from '#data/pricing'
 import testimonials from '#data/testimonials'
 
-export const meta: Metadata = {
-  title: 'Saas UI Landingspage',
-  description: 'Free SaaS landingspage starter kit',
-}
-
 const Home: NextPage = () => {
   return (
-    <Box>
-      <HeroSection />
-
-      <HighlightsSection />
-
-      <FeaturesSection />
-
-      {/* <TestimonialsSection /> */}
-
-      {/* <PricingSection /> */}
-
-      <FaqSection />
-    </Box>
+    <>
+      <Head>
+        <title>Elevate Tech Solutions</title>
+        <meta name="description" content="Elevate Tech Solutions" />
+      </Head>
+      <Box>
+        <HeroSection />
+        <HighlightsSection />
+        <FeaturesSection />
+        {/* <TestimonialsSection /> */}
+        {/* <PricingSection /> */}
+        <FaqSection />
+      </Box>
+    </>
   )
 }
 
