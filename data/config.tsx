@@ -20,8 +20,8 @@ const siteConfig = {
         label: 'Features',
       },
       {
-        id: 'pricing',
-        label: 'Pricing',
+        id: 'projects',
+        label: 'Projects',
       },
       {
         id: 'faq',

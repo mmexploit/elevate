@@ -83,7 +83,7 @@ const HeroSection: React.FC = () => {
   return (
     <Box position="relative" overflow="hidden">
       <BackgroundGradient height="100%" zIndex="-1" />
-      <Container maxW="container.xl" pt={{ base: 40, lg: 60 }} pb="40">
+      <Container maxW="container.xl" pt={{ base: 40, lg: 40 }} pb="40">
         <Stack direction={{ base: 'column', lg: 'row' }} alignItems="center">
           <Hero
             id="home"
@@ -99,12 +99,12 @@ const HeroSection: React.FC = () => {
               <FallInPlace delay={0.4} fontWeight="medium">
                 Innovative tech solutions React component library
                 <Br /> tailored to transform, streamline, and elevate your{' '}
-                <Br /> business to new <Em>heights</Em>.
+                <Br /> business to new heights.
               </FallInPlace>
             }
           >
             <FallInPlace delay={0.8}>
-              <ButtonGroup spacing={4} alignItems="center" className="mt-8">
+              <ButtonGroup spacing={4} alignItems="center" className="mt-16">
                 <ButtonLink colorScheme="primary" size="lg" href="/signup">
                   Get started
                 </ButtonLink>
@@ -160,7 +160,7 @@ const HeroSection: React.FC = () => {
         columns={[1, 2, 4]}
         iconSize={4}
         innerWidth="container.xl"
-        pt="20"
+        pt="40"
         features={[
           {
             title: 'Expertise You Can Trust',

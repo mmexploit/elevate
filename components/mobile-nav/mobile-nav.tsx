@@ -64,7 +64,7 @@ interface MobileNavContentProps {
 }
 
 export function MobileNavContent(props: MobileNavContentProps) {
-  const { isOpen, onClose = () => {} } = props
+  const { isOpen, onClose = () => { } } = props
   const closeBtnRef = React.useRef<HTMLButtonElement>(null)
   const pathname = usePathname()
   const bgColor = useColorModeValue('whiteAlpha.900', 'blackAlpha.900')
@@ -119,7 +119,7 @@ export function MobileNavContent(props: MobileNavContentProps) {
                   ({ id, label, ...props }, i) => {
                     return (
                       <NavLink
-                        href={`/#${id}`}
+                        href={`/${id}`}
                         key={i}
                         {...(props as any)}
                       >
