@@ -22,6 +22,7 @@ const siteConfig = {
       {
         id: 'projects',
         label: 'Projects',
+        href: "/projects"
       },
       {
         id: 'faq',
