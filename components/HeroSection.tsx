@@ -73,7 +73,7 @@ export default function HeroSection() {
               description1="Enterprise Resource Planning Made Simple"
               description2="Take control of your business operations with scalable ERP systems. From managing finances to optimizing workflows, our solutions integrate all your processes into a single, easy-to-use platform."
               button1="Optimize with ERP "
-              button1Link="/https://t.me/+251988745721" // Dynamic link for button1
+              button1Link="https://t.me/+251988745721" // Dynamic link for button1
               
               backgroundColor="blue"
             />
@@ -88,7 +88,7 @@ export default function HeroSection() {
               description1="Boost Customer Relationships"
               description2="Enhance your sales and support strategies with powerful CRM tools. Our systems help you track customer interactions, analyze data, and personalize services, ensuring long-term client satisfaction and loyalty."
               button1="Explore CRM Solutions"
-              button1Link="/https://t.me/+251988745721" // Dynamic link for button1
+              button1Link="https://t.me/+251988745721" // Dynamic link for button1
             
               backgroundColor="white"
               darkText
@@ -105,7 +105,7 @@ export default function HeroSection() {
             // button1="Services"
             // button1Link="/services" // Dynamic link for button2
             button1="Create Your Landing Page"
-            button1Link="/https://t.me/+251988745721" // Dynamic link for button2
+            button1Link="https://t.me/+251988745721" // Dynamic link for button2
             backgroundColor="blue"
 />
           </CarouselItem>
@@ -117,7 +117,7 @@ export default function HeroSection() {
             description1="Streamlining Procurement Processes"
             description2="Optimize your procurement cycle with our advanced e-procurement solutions. Automate vendor management, improve cost tracking, and enhance transparency, making your supply chain smarter and more efficient."
             button1="Discover E-Procurement Solutions"
-            button1Link="/https://t.me/+251988745721" // Dynamic link for button1
+            button1Link="https://t.me/+251988745721" // Dynamic link for button1
             
             backgroundColor="yellow"
             darkText
@@ -131,7 +131,7 @@ export default function HeroSection() {
             description1="Engaging Mobile Experiences"
             description2="Bring your ideas to life with custom mobile apps for iOS and Android. Our apps are designed with a focus on user experience, ensuring seamless navigation, cutting-edge features, and robust performance for your customers on the go."
             button1="Design Your Mobile App"
-            button1Link="/https://t.me/+251988745721" // Dynamic link for button1
+            button1Link="https://t.me/+251988745721" // Dynamic link for button1
             
             backgroundColor="yellow"
             darkText
