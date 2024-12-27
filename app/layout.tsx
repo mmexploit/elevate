@@ -1,11 +1,11 @@
 import { ColorModeScript, theme } from '@chakra-ui/react'
-import { Poppins } from 'next/font/google'
+import { Lora } from 'next/font/google'
 import { Provider } from './provider'
 import "./globals.css"
 
-// const poppins = Poppins({
-//   subsets: ['latin'], weight: ['300', '500', '600', '800', '900']
-// });
+const poppins = Lora({
+  subsets: ['latin'], 
+});
 export default function Layout(props: { children: React.ReactNode }) {
   const colorMode = theme.config.initialColorMode;
 
@@ -32,7 +32,7 @@ export default function Layout(props: { children: React.ReactNode }) {
         <link rel="manifest" href="/static/favicons/manifest.json" />
         <link href="/public/output.css" rel="stylesheet"/>
       </head>
-      <body className={`chakra-ui-${colorMode} `}>
+      <body className={`chakra-ui-${colorMode} ${poppins.className}`}>
         <ColorModeScript initialColorMode={colorMode} />
         <Provider>{props.children}</Provider>
       </body>
