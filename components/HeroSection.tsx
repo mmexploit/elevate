@@ -66,7 +66,7 @@ export default function HeroSection() {
         <CarouselContent >
           <CarouselItem >
           <HeroContent
-              backgroundDesign="/blue2.svg"
+              backgroundDesign="/bgb.jpg"
               leftSideImage="/erp.png"
               quote={<div className="font-bold uppercase text-[26px] leading-[130%] sm:text-[32px] xl:text-[37px]">ERP Systems</div>}
               // description="Welcome to Addis Ababa University. Ethiopia's pioneer in higher education since 1950. AAU is dedicated to advancing knowledge and serving the community through excellence in education, research and community services."
@@ -82,7 +82,7 @@ export default function HeroSection() {
 
           <CarouselItem>
           <HeroContent
-              backgroundDesign="/gray1.svg"
+              backgroundDesign="/bgw.jpg"
               leftSideImage="/crm.png"
               quote={<div className="text-blue-800">CRM Systems</div>}
               description1="Boost Customer Relationships"
@@ -97,7 +97,7 @@ export default function HeroSection() {
           </CarouselItem>
           <CarouselItem>
           <HeroContent
-            backgroundDesign="/blue2.svg"
+            backgroundDesign="/bgb.jpg"
             leftSideImage="/landing.png"
             quote="Landing Pages"
             description1="High-Impact Landing Pages"
@@ -111,7 +111,7 @@ export default function HeroSection() {
           </CarouselItem>
           <CarouselItem>
           <HeroContent
-            backgroundDesign="/bgCnew.svg"
+            backgroundDesign="/bgw.jpg"
             leftSideImage="/eproc.png"
             quote={<div> E-Procurement</div>}
             description1="Streamlining Procurement Processes"
@@ -125,7 +125,7 @@ export default function HeroSection() {
           </CarouselItem>
           <CarouselItem>
           <HeroContent
-            backgroundDesign="/bgCnew.svg"
+            backgroundDesign="/bgb.jpg"
             leftSideImage="/mobile.png"
             quote={<div>Mobile Apps</div>}
             description1="Engaging Mobile Experiences"
@@ -133,8 +133,8 @@ export default function HeroSection() {
             button1="Design Your Mobile App"
             button1Link="https://t.me/+251988745721" // Dynamic link for button1
             
-            backgroundColor="yellow"
-            darkText
+            backgroundColor="blue"
+            
 />
           </CarouselItem>
 
