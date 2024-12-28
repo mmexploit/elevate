@@ -1,50 +1,63 @@
 import HeroSection from '#components/HeroSection'
-import ShowcaseSection from '#components/ShowCaseSection'
 import Link from 'next/link';
 import React from 'react';
 
 const projects = [
   {
-    image: "/landing.png",
-    title: "E-Commerce Platform for Retail Store",
+    image: "/tenaye.png",
+    title: "Live Chat Medical Consultation Platform",
     description:
-      "A scalable e-commerce platform tailored for seamless shopping experiences.",
-    link: "/projects/ecommerce-platform",
+      "Connect instantly with expert doctors worldwide to discuss your health concerns. This platform ensures you'll be matched with the right specialist for your issue, offering seamless live chat, email integration, and even a Telegram chatbot for convenience. Accessible, reliable, and tailored healthcare support at your fingertips.",
+    link: "https://www.tenayehealthsolutions.com",
   },
   {
-    image: "/mobile.png",
-    title: "E-Procurement System for Enterprises",
+    image: "/sina.png",
+    title: "Legal Professional Selection Platform",
     description:
-      "Streamlined procurement processes for efficient supply chain management.",
-    link: "/projects/eprocurement-system",
+      "Empowering clients with the freedom to choose the ideal legal professional for their case. Whether you prefer the company's expertise or a skilled gig worker, our platform provides detailed profiles of law professionals, enabling informed decisions and personalized legal solutions.",
+    link: "https://www.sinalawoffice.com",
   },
   {
-    image: "/erp.png",
-    title: "High-Impact Landing Page Design",
+    image: "/quantify.png",
+    title: "BOQ Calculation Service",
     description:
-      "Landing pages designed for maximum conversions and lead generation.",
-    link: "/projects/landing-page-design",
+      "Get your Bill of Quantities calculated quickly and accurately. Simply upload your building plans through our Telegram chatbot, and let our experts handle the rest. Experience speed and precision in construction cost estimation, hassle-free.",
+    link: "https://www.quantifyboq.com",
   },
   {
-    image: "/eproc.png",
-    title: "Mobile App Development for Businesses",
+    image: "/serki.png",
+    title: "Beauty Professionals On-Demand",
     description:
-      "Custom mobile apps to bring your ideas to life with stunning UX/UI.",
-    link: "/projects/mobile-app-development",
+      "Discover certified beauty professionals ready to provide top-tier services anytime, anywhere. Whether it's hairstyling, makeup, or skincare, our platform connects you with trained gig workers for unparalleled convenience and quality.",
+    link: "https://www.serkibeauty.com",
   },
   {
-    image: "/crm.png",
-    title: "ERP System for Enterprise Management",
+    image: "/askfin.png",
+    title: "On-Demand Accounting Professionals",
     description:
-      "Integrated ERP systems to unify and optimize business operations.",
-    link: "/projects/erp-system",
+      "Access a network of certified accounting experts ready to assist with your financial needs. Choose between letting the company manage your accounting or selecting a skilled gig worker to handle your specific case. Flexible, reliable, and professional service at your convenience.",
+    link: "https://www.askfinancialsolution.com",
   },
   {
-    image: "/landing.png",
-    title: "CRM Solution for Customer Engagement",
+    image: "/abiya.png",
+    title: "Global Talent Platform for Film Industry",
     description:
-      "Boost customer relationships with powerful CRM tools.",
-    link: "/projects/crm-solution",
+      "Bridge the gap between talent and opportunity with our platform showcasing certified actors, scriptwriters, and more. Explore detailed profiles and connect effortlessly, creating a global hub for professionals and clients to collaborate.",
+    link: "https://www.art-website-7mvh.vercel.app",
+  },
+  {
+    image: "/tena.png",
+    title: "Grocery Delivery Service",
+    description:
+      "From raw ingredients to processed or cooked meals, our platform offers it all with reliable delivery. Experience the ultimate convenience in grocery shopping tailored to meet your every need.",
+    link: "https://www.tenameaza.com",
+  },
+  {
+    image: "/ayo.png",
+    title: "Call Center as a Service",
+    description:
+      "Streamline your customer support with our state-of-the-art call center services. Offering professional, scalable solutions designed to enhance your business operations and improve customer satisfaction.",
+    link: "https://www.ayocallcenter.com",
   },
 ];
 
@@ -58,13 +71,14 @@ const Card = ({ image, title, description, link }) => (
     <div className="p-4">
       <h3 className="text-xl font-semibold mb-2 ">{title}</h3>
       <p className="mb-4">{description}</p>
-      <Link href={link} passHref>
-        <span
-          className="inline-block px-6 py-2 text-white bg-blue-500 rounded-full transition-colors duration-300 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
-        >
-          View Details
-        </span>
-      </Link>
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block px-6 py-2 text-white bg-blue-500 rounded-full transition-colors duration-300 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      >
+        View Details
+      </a>
     </div>
   </div>
 );
@@ -74,12 +88,12 @@ const Projects = () => {
     <div className='pt-[5%]'>
      
        <HeroSection/>
-       <section className="py-[10%] ">
-      <div className="container mx-auto px-4">
-        <div className='mx-2 md:mx-6'>
+       <section className="py-[7%] ">
+      <div className="container mx-auto px-6">
+      
         <h2 className="text-4xl font-bold text-start mb-6 ">Our Work Speaks for Itself</h2>
         <h2 className="text-xl font-medium text-start mb-12 ">Delivering Tailored Software Solutions to Elevate Businesses has been always been our priority</h2>
-        </div>
+   
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card key={index} {...project} />
