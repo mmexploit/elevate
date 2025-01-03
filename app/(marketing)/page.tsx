@@ -97,7 +97,7 @@ const HeroSection: React.FC = () => {
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Innovative tech solutions React component library
+                Innovative tech solutions 
                 <Br /> tailored to transform, streamline, and elevate your{' '}
                 <Br /> business to new heights.
               </FallInPlace>
