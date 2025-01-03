@@ -215,7 +215,7 @@ const HighlightsSection = () => {
             At Elevate Tech Solutions, we bridge the gap between your business
             goals and cutting-edge technology. Our expert team delivers
             customized solutions to modernize your operations, safeguard your
-            data, and unlock new growth opportunities. Whether you're a startup
+            data, and unlock new growth opportunities. Whether you&apos;re a startup
             or an established enterprise, we’re here to elevate your business
             with solutions that are as dynamic as your ambitions.
           </Text>
