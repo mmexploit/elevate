@@ -5,6 +5,7 @@ interface HeroProps extends Omit<FlexProps, 'title'> {
   description?: string | React.ReactNode
 }
 
+
 export const Hero = ({ title, description, children, ...rest }: HeroProps) => {
   return (
     <Flex py="20" alignItems="center" {...rest}>
