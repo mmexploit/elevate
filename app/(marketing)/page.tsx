@@ -105,7 +105,7 @@ const HeroSection: React.FC = () => {
           >
             <FallInPlace delay={0.8}>
               <ButtonGroup spacing={4} alignItems="center" className="mt-16">
-                <ButtonLink colorScheme="primary" size="lg" href="/signup">
+                <ButtonLink colorScheme="primary" size="lg" href="https://t.me/+251988745721">
                   Get started
                 </ButtonLink>
                 <ButtonLink
